@@ -7,14 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div id="container-for-all-content">
     <h1>Caesar cipher web app</h1>
+    <div class="btns-settings">
+      <button class="button-style" id="btn-default-textarea-size">
+        Default textarea size
+      </button>
+      <button class="button-style" id="btn-textarea-size-plus">
+        Size +
+      </button>
+      <button class="button-style" id="btn-textarea-size-minus">
+        Size -
+      </button>
+      <button class="button-style" id="btn-clear-all">
+        Clear all
+      </button>
+    </div>
     <div id="app-container">
-      <textarea name="" id="text"></textarea>
-      <div id="buttons-container">
-        <button id='encrypt'>Encrypt</button>
+      <textarea id='textarea' class="resizable" name=""></textarea>
+      <div id="btns-below-container">
+        <button class='button-style' id='encrypt'>Encrypt</button>
         <input id='key' type="text" placeholder="key">
-        <button id="decrypt">Decrypt</button>
+        <button class='button-style' id="decrypt">Decrypt</button>
       </div>
     </div>
   </div>
