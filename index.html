@@ -13,18 +13,24 @@
       <button class="button-style" id="btn-default-textarea-size">
         Default textarea size
       </button>
-      <button class="button-style" id="btn-textarea-size-plus">
-        Size +
+      <button class="button-style tooltip-interface-size"
+       id="btn-textarea-size-plus" data-tooltip="Make interface greater">
+        +
       </button>
-      <button class="button-style" id="btn-textarea-size-minus">
-        Size -
+      <button class="button-style tooltip-interface-size"
+       id="btn-textarea-size-minus" data-tooltip="Make interface default size">
+        Default
+      </button>
+      <button class="button-style tooltip-interface-size"
+       id="btn-textarea-size-minus" data-tooltip="Make interface less">
+        -
       </button>
       <button class="button-style" id="btn-clear-all">
         Clear all
       </button>
     </div>
     <div id="app-container">
-      <textarea id='textarea' class="resizable" name=""></textarea>
+      <textarea id='textarea' name=""></textarea>
       <div id="btns-below-container">
         <button class='button-style' id='encrypt'>Encrypt</button>
         <input id='key' type="text" placeholder="key">

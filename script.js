@@ -54,7 +54,8 @@ btnDecrypt.addEventListener('click', () => {
 });
 // /Encryption and Decryption
 
-// Default textarea size
+/* Default textarea size. Smooth animation for textarea when pressing 
+ the button default texearea size */
 let defaultWidth, defaultHeight;
 const textArea = document.getElementById('textarea');
 const defaultStyle = getComputedStyle(textArea);
@@ -63,10 +64,15 @@ defaultHeight = defaultStyle.getPropertyValue('height');
 const btnDefaultTextareaSize = document.getElementById('btn-default-textarea-size');
 
 btnDefaultTextareaSize.addEventListener('click', () => {
+  textArea.classList.add('transition-for-closing-textarea')
   textArea.style.width = defaultWidth;
   textArea.style.height = defaultHeight;
+  setTimeout(() => {
+    textArea.classList.remove('transition-for-closing-textarea')
+  }, 400);
 });
-// /Default textarea size
+/* /Default textarea size. /Smooth animation for textarea when pressing 
+ the button default texearea size */
 
 // Clear all
 const btnClearAll = document.getElementById('btn-clear-all');
