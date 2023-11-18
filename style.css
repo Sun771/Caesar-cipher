@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden
 }
 
 /* Animated gradient */
@@ -30,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all ease 0.4s;
 }
 
 #container-for-all-content h1 {
@@ -77,12 +79,12 @@ body {
 .button-style {
   font-size: 18px;
   padding: 7px 15px;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: white;
   border-radius: 10px; 
   border: none;
   transition: all ease 0.3s;
-  border: 2px solid black;
+  border: 2px solid rgb(30, 30, 30);
   position: relative;
 }
 
